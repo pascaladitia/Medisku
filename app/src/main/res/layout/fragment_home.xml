@@ -1,0 +1,691 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    tools:context=".presentation.main.MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginHorizontal="18dp"
+            android:background="@drawable/bgg_edt"
+            android:elevation="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@color/black55"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_card"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView"
+                style="@style/text_gilroy_content2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:text="Solusi,"
+                android:textColor="@color/blue_dark"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                style="@style/text_gilroy_content1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:text="Kesehatan Anda"
+                android:textColor="@color/blue_dark"
+                app:layout_constraintBottom_toBottomOf="@+id/textView"
+                app:layout_constraintStart_toEndOf="@+id/textView" />
+
+            <TextView
+                android:id="@+id/textView3"
+                style="@style/text_proximanova_subContent3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:text="Update informasi seputar kesehatan \nsemua bisa disini !"
+                android:textColor="@color/blue_dark"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="12dp"
+                android:layout_marginStart="12dp"
+                android:outlineProvider="paddedBounds"
+                android:outlineSpotShadowColor="@color/black60"
+                android:text="Selengkapnya"
+                app:cornerRadius="8dp"
+                app:elevation="18dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="12dp"
+                android:src="@drawable/img_white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="36dp"
+            android:translationZ="32dp"
+            android:src="@drawable/img_calendar"
+            app:layout_constraintBottom_toBottomOf="@+id/cardView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/cardView" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cardView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:layout_marginHorizontal="18dp"
+            android:background="@drawable/bgg_edt"
+            android:elevation="18dp"
+            android:outlineProvider="paddedBounds"
+            android:outlineSpotShadowColor="@color/black60"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+            <TextView
+                android:id="@+id/textView1"
+                style="@style/text_gilroy_content2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:text="Layanan Khusus"
+                android:textColor="@color/blue_dark"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView4"
+                style="@style/text_proximanova_subContent3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:text="Tes Covid 19, Cegah Corona \nSedini Mungkin"
+                android:textColor="@color/blue_dark"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+            <TextView
+                style="@style/text_gilroy_content3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="12dp"
+                android:layout_marginStart="12dp"
+                android:drawableEnd="@drawable/ic_right"
+                android:drawablePadding="8dp"
+                android:text="Daftar Tes"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="72dp"
+            android:translationZ="32dp"
+            android:src="@drawable/img_medis"
+            app:layout_constraintBottom_toBottomOf="@+id/cardView2"
+            app:layout_constraintEnd_toEndOf="@+id/cardView2"
+            app:layout_constraintTop_toTopOf="@+id/cardView2" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cardView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:layout_marginHorizontal="18dp"
+            android:background="@drawable/bgg_edt"
+            android:elevation="18dp"
+            android:outlineProvider="paddedBounds"
+            android:outlineSpotShadowColor="@color/black60"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView2">
+
+            <TextView
+                android:id="@+id/textView6"
+                style="@style/text_gilroy_content2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="12dp"
+                android:text="Track Pemeriksaan"
+                android:textColor="@color/blue_dark"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView7"
+                style="@style/text_proximanova_subContent3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Kamu dapat mengecek progress \npemeriksaanmu disini"
+                android:textColor="@color/blue_dark"
+                app:layout_constraintStart_toStartOf="@+id/textView6"
+                app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+            <TextView
+                style="@style/text_gilroy_content3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="12dp"
+                android:drawableEnd="@drawable/ic_right"
+                android:drawablePadding="8dp"
+                android:text="Track"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView7"
+                app:layout_constraintTop_toBottomOf="@+id/textView7" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginBottom="72dp"
+            android:src="@drawable/img_search"
+            android:translationZ="32dp"
+            app:layout_constraintBottom_toBottomOf="@+id/cardView3"
+            app:layout_constraintStart_toStartOf="@+id/cardView3"
+            app:layout_constraintTop_toTopOf="@+id/cardView3" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/bgg_button2"
+            android:elevation="18dp"
+            android:outlineProvider="paddedBounds"
+            android:outlineSpotShadowColor="@color/black60"
+            android:padding="8dp"
+            android:src="@drawable/ic_menu"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView3" />
+
+        <androidx.appcompat.widget.SearchView
+            style="@style/text_proximanova_subContent3"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginHorizontal="18dp"
+            android:padding="8dp"
+            android:elevation="18dp"
+            android:outlineProvider="paddedBounds"
+            android:outlineSpotShadowColor="@color/black60"
+            app:queryHint="Search"
+            android:background="@drawable/bgg_button2"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView4"
+            app:layout_constraintTop_toTopOf="@+id/imageView4" />
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:scrollbars="none"
+            app:layout_constraintTop_toBottomOf="@+id/imageView4">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/text_gilroy_subContent2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="12dp"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="@drawable/bgg_button"
+                    android:elevation="18dp"
+                    android:outlineProvider="paddedBounds"
+                    android:outlineSpotShadowColor="@color/black60"
+                    android:paddingHorizontal="32dp"
+                    android:paddingVertical="8dp"
+                    android:text="All Product"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    style="@style/text_gilroy_subContent2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="12dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="@drawable/bgg_button2"
+                    android:elevation="18dp"
+                    android:outlineProvider="paddedBounds"
+                    android:outlineSpotShadowColor="@color/black60"
+                    android:paddingHorizontal="32dp"
+                    android:paddingVertical="8dp"
+                    android:text="Layanan Kesehatan"
+                    android:textColor="@color/blue_dark" />
+
+                <TextView
+                    style="@style/text_gilroy_subContent2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="12dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginEnd="18dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="@drawable/bgg_button2"
+                    android:elevation="18dp"
+                    android:outlineProvider="paddedBounds"
+                    android:outlineSpotShadowColor="@color/black60"
+                    android:paddingHorizontal="32dp"
+                    android:paddingVertical="8dp"
+                    android:text="Alat Kesehatan"
+                    android:textColor="@color/blue_dark" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:id="@+id/linearMicro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bgg_edt"
+                android:elevation="18dp"
+                android:outlineProvider="paddedBounds"
+                android:outlineSpotShadowColor="@color/black60"
+                android:layout_marginStart="18dp"
+                android:layout_marginVertical="18dp"
+                android:layout_marginEnd="18dp"
+                android:padding="12dp">
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/img_microskof"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    style="@style/text_proximanova_subContent2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Suntik Steril"
+                    android:textColor="@color/blue_dark"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    style="@style/text_proximanova_subContent2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Rp. 10.000"
+                    android:textColor="@color/orange"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+                <TextView
+                    style="@style/text_gilroy_subContent3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:background="@drawable/bgg_edt"
+                    android:backgroundTint="@color/green"
+                    android:text="Ready Stok"
+                    android:textColor="@color/blue_dark"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <TextView
+                    style="@style/text_proximanova_content3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_start"
+                    android:drawableTint="@color/yellow"
+                    android:drawablePadding="4dp"
+                    android:gravity="center"
+                    android:text="5"
+                    android:textColor="@color/black60"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bgg_edt"
+                android:elevation="18dp"
+                android:outlineProvider="paddedBounds"
+                android:outlineSpotShadowColor="@color/black60"
+                android:layout_marginVertical="18dp"
+                android:layout_marginEnd="18dp"
+                android:padding="12dp">
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/img_microskof"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    style="@style/text_proximanova_subContent2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Suntik Steril"
+                    android:textColor="@color/blue_dark"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    style="@style/text_proximanova_subContent2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Rp. 10.000"
+                    android:textColor="@color/orange"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+                <TextView
+                    style="@style/text_gilroy_subContent3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:background="@drawable/bgg_edt"
+                    android:backgroundTint="@color/green"
+                    android:text="Ready Stok"
+                    android:textColor="@color/blue_dark"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <TextView
+                    style="@style/text_proximanova_content3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_start"
+                    android:drawableTint="@color/yellow"
+                    android:drawablePadding="4dp"
+                    android:gravity="center"
+                    android:text="5"
+                    android:textColor="@color/black60"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView21"
+            style="@style/text_gilroy_content1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_marginStart="18dp"
+            android:text="Pilih Tipe Layanan Kesehatan Anda"
+            android:textColor="@color/blue_dark"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearMicro" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/bgg_button2"
+            android:elevation="18dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:outlineProvider="paddedBounds"
+            android:outlineSpotShadowColor="@color/black60"
+            android:padding="4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView21">
+
+            <TextView
+                style="@style/text_gilroy_content3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bgg_button"
+                android:backgroundTint="@color/accent"
+                android:paddingHorizontal="24dp"
+                android:paddingVertical="8dp"
+                android:text="Satuan"
+                android:textColor="@color/blue_dark" />
+
+            <TextView
+                style="@style/text_gilroy_subContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="12dp"
+                android:backgroundTint="@color/accent"
+                android:text="Paket Pemeriksaan"
+                android:textColor="@color/blue_dark" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginHorizontal="18dp"
+            android:background="@drawable/bgg_edt"
+            android:elevation="18dp"
+            android:outlineProvider="paddedBounds"
+            android:outlineSpotShadowColor="@color/black60"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout20">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="12dp"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/text_gilroy_subContent2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="12dp"
+                    android:text="PCR Swab Test (Drive Thru)\nHasil 1 Hari Kerja"
+                    android:textColor="@color/blue_dark" />
+
+                <TextView
+                    style="@style/text_gilroy_subContent2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginHorizontal="12dp"
+                    android:text="Rp. 1.400.000"
+                    android:textColor="@color/orange" />
+
+                <TextView
+                    style="@style/text_gilroy_subContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:drawableStart="@drawable/ic_gedung"
+                    android:drawablePadding="8dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginHorizontal="12dp"
+                    android:backgroundTint="@color/accent"
+                    android:text="Lenmarc Surabaya"
+                    android:textColor="@color/blue_dark" />
+
+                <TextView
+                    style="@style/text_gilroy_subContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:drawableStart="@drawable/ic_location"
+                    android:drawablePadding="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginHorizontal="12dp"
+                    android:backgroundTint="@color/accent"
+                    android:text="Dukuh Pakis, Surabaya"
+                    android:textColor="@color/black60" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_gedung"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="18dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/bgg_edt"
+            android:elevation="18dp"
+            android:orientation="horizontal"
+            android:outlineProvider="paddedBounds"
+            android:outlineSpotShadowColor="@color/black60"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <TextView
+                    style="@style/text_gilroy_subContent2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="12dp"
+                    android:text="PCR Swab Test (Drive Thru)\nHasil 1 Hari Kerja"
+                    android:textColor="@color/blue_dark" />
+
+                <TextView
+                    style="@style/text_gilroy_subContent2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="12dp"
+                    android:layout_marginTop="12dp"
+                    android:text="Rp. 1.400.000"
+                    android:textColor="@color/orange" />
+
+                <TextView
+                    style="@style/text_gilroy_subContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="12dp"
+                    android:layout_marginTop="18dp"
+                    android:backgroundTint="@color/accent"
+                    android:drawableStart="@drawable/ic_gedung"
+                    android:drawablePadding="8dp"
+                    android:gravity="center_vertical"
+                    android:text="Lenmarc Surabaya"
+                    android:textColor="@color/blue_dark" />
+
+                <TextView
+                    style="@style/text_gilroy_subContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="12dp"
+                    android:layout_marginTop="8dp"
+                    android:backgroundTint="@color/accent"
+                    android:drawableStart="@drawable/ic_location"
+                    android:drawablePadding="8dp"
+                    android:gravity="center_vertical"
+                    android:text="Dukuh Pakis, Surabaya"
+                    android:textColor="@color/black60" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_gedung2" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView131"
+            style="@style/text_proximanova_subContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="18dp"
+            android:layout_marginTop="14dp"
+            android:drawableStart="@drawable/ic_loading"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            android:text="Tampilkan Lebih Banyak"
+            android:textColor="@color/black60"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout30" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_card2"
+            app:layout_constraintTop_toBottomOf="@+id/textView131" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

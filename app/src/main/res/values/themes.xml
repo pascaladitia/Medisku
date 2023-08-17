@@ -1,0 +1,156 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MedisKu" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorAccent">@color/gray</item>
+        <item name="colorPrimaryDark">@color/blue_dark</item>
+    </style>
+
+    <style name="Theme.Medisku" parent="Base.Theme.MedisKu" />
+
+    <!--    Gilroy-->
+    <style name="text_gilroy_title">
+        <item name="android:textSize">28sp</item>
+        <item name="fontFamily">@font/gilroy_bold</item>
+    </style>
+
+    <style name="text_gilroy_title1">
+        <item name="android:textSize">28sp</item>
+        <item name="fontFamily">@font/gilroy_regular</item>
+    </style>
+
+    <style name="text_gilroy_title2">
+        <item name="android:textSize">24sp</item>
+        <item name="fontFamily">@font/gilroy_bold</item>
+    </style>
+
+    <style name="text_gilroy_title3">
+        <item name="android:textSize">18sp</item>
+        <item name="fontFamily">@font/gilroy_bold</item>
+    </style>
+
+    <style name="text_gilroy_title4">
+        <item name="android:textSize">16sp</item>
+        <item name="fontFamily">@font/gilroy_bold</item>
+    </style>
+
+
+    <style name="text_gilroy_content">
+        <item name="android:textSize">24sp</item>
+        <item name="fontFamily">@font/gilroy_medium</item>
+    </style>
+
+    <style name="text_gilroy_content1">
+        <item name="android:textSize">18sp</item>
+        <item name="fontFamily">@font/gilroy_bold</item>
+    </style>
+
+    <style name="text_gilroy_content2">
+        <item name="android:textSize">18sp</item>
+        <item name="fontFamily">@font/gilroy_bold</item>
+    </style>
+
+    <style name="text_gilroy_content3">
+        <item name="android:textSize">16sp</item>
+        <item name="fontFamily">@font/gilroy_bold</item>
+    </style>
+
+    <style name="text_gilroy_subContent">
+        <item name="android:textSize">16sp</item>
+        <item name="fontFamily">@font/gilroy_regular</item>
+    </style>
+
+    <style name="text_gilroy_subContent1">
+        <item name="android:textSize">14sp</item>
+        <item name="fontFamily">@font/gilroy_regular</item>
+    </style>
+
+    <style name="text_gilroy_subContent2">
+        <item name="android:textSize">14sp</item>
+        <item name="fontFamily">@font/gilroy_bold</item>
+    </style>
+
+    <style name="text_gilroy_subContent3">
+        <item name="android:textSize">12sp</item>
+        <item name="fontFamily">@font/gilroy_regular</item>
+    </style>
+
+    <style name="text_gilroy_subContent4">
+        <item name="android:textSize">10sp</item>
+        <item name="fontFamily">@font/gilroy_regular</item>
+    </style>
+
+
+    <!--    Proxima-->
+    <style name="text_proximanova_title">
+        <item name="android:textSize">28sp</item>
+        <item name="fontFamily">@font/proximanova_bold</item>
+    </style>
+
+    <style name="text_proximanova_title2">
+        <item name="android:textSize">24sp</item>
+        <item name="fontFamily">@font/proximanova_bold</item>
+    </style>
+
+    <style name="text_proximanova_title3">
+        <item name="android:textSize">18sp</item>
+        <item name="fontFamily">@font/proximanova_bold</item>
+    </style>
+
+    <style name="text_proximanova_title4">
+        <item name="android:textSize">16sp</item>
+        <item name="fontFamily">@font/proximanova_bold</item>
+    </style>
+
+
+    <style name="text_proximanova_content">
+        <item name="android:textSize">24sp</item>
+        <item name="fontFamily">@font/proximanova_medium</item>
+    </style>
+
+    <style name="text_proximanova_content2">
+        <item name="android:textSize">18sp</item>
+        <item name="fontFamily">@font/proximanova_medium</item>
+    </style>
+
+    <style name="text_proximanova_content3">
+        <item name="android:textSize">16sp</item>
+        <item name="fontFamily">@font/proximanova_medium</item>
+    </style>
+
+    <style name="text_proximanova_subContent">
+        <item name="android:textSize">14sp</item>
+        <item name="fontFamily">@font/proximanova_regular</item>
+    </style>
+
+    <style name="text_proximanova_subContent1">
+        <item name="android:textSize">14sp</item>
+        <item name="fontFamily">@font/proximanova_regular</item>
+    </style>
+
+    <style name="text_proximanova_subContent2">
+        <item name="android:textSize">12sp</item>
+        <item name="fontFamily">@font/proximanova_bold</item>
+    </style>
+
+    <style name="text_proximanova_subContent3">
+        <item name="android:textSize">12sp</item>
+        <item name="fontFamily">@font/proximanova_regular</item>
+    </style>
+
+    <style name="text_proximanova_subContent4">
+        <item name="android:textSize">10sp</item>
+        <item name="fontFamily">@font/proximanova_regular</item>
+    </style>
+
+    <style name="Theme.Medisku.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Medisku.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.Medisku.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

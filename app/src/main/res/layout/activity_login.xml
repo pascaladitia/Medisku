@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    tools:context=".presentation.login.LoginActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/text_gilroy_title1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="48dp"
+        android:textColor="@color/blue_dark"
+        android:text="@string/hai"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        style="@style/text_gilroy_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:text="@string/selamat_datang"
+        android:textColor="@color/blue_dark"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintStart_toEndOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/text_proximanova_subContent2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:text="@string/melanjutkan"
+        android:textColor="@color/gray_dark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <TextView
+            style="@style/text_gilroy_content2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:textColor="@color/blue_dark"
+            android:text="@string/email" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            style="@style/text_proximanova_subContent"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="18dp"
+            android:background="@drawable/bgg_edt"
+            android:elevation="18dp"
+            android:outlineProvider="paddedBounds"
+            android:outlineSpotShadowColor="@color/black60"
+            android:paddingHorizontal="24dp"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/gray_dark"
+            android:hint="@string/masukkan_email_anda"
+            android:textIsSelectable="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="18dp"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/text_gilroy_content2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/blue_dark"
+                android:text="@string/password" />
+
+            <TextView
+                style="@style/text_proximanova_subContent3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/lupa_password_anda"
+                android:textColor="@color/gray_dark"/>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/etPassword"
+            style="@style/text_proximanova_subContent"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/bgg_edt"
+            android:elevation="18dp"
+            android:outlineProvider="paddedBounds"
+            android:outlineSpotShadowColor="@color/black60"
+            android:drawableEnd="@drawable/ic_toogle"
+            android:inputType="textPassword"
+            android:paddingHorizontal="24dp"
+            android:textColor="@color/gray_dark"
+            android:hint="@string/masukkan_password_anda"
+            android:textIsSelectable="true" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginVertical="16dp"
+            android:layout_marginHorizontal="18dp"
+            android:outlineProvider="paddedBounds"
+            android:outlineSpotShadowColor="@color/black60"
+            android:drawableEnd="@drawable/ic_right"
+            android:drawableTint="@color/white"
+            app:elevation="18dp"
+            app:cornerRadius="8dp"
+            android:text="@string/login"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="18dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/text_proximanova_subContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="18dp"
+                android:textColor="@color/black60"
+                android:text="@string/belum_punya_akun" />
+
+            <TextView
+                android:id="@+id/btnRegister"
+                style="@style/text_proximanova_subContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/daftar_sekarang"
+                android:textColor="@color/blue"/>
+        </LinearLayout>
+
+        <TextView
+            style="@style/text_proximanova_subContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:layout_marginBottom="32dp"
+            android:gravity="center"
+            android:layout_marginEnd="18dp"
+            android:textColor="@color/black60"
+            android:text="@string/copyright" />
+
+    </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/proggressLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
